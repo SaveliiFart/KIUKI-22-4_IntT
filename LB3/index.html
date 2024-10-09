@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>LB3</h1>
+
+    <div class="slider" id="slider">
+        <img src="https://i.postimg.cc/nhsTGkLQ/1.png" alt="Белый пушистый кот">
+        <img src="https://i.postimg.cc/cLVh9nKk/2.png" alt="Рыжий пушистый кот в джинсах">
+        <img src="https://i.postimg.cc/4NxWmZkP/3.png" alt="Бело-рыжий пушистый кот">
+        <img src="https://i.postimg.cc/FFZPrzq1/8.png" alt="Золотистый пушистый кот">
+        <img src="https://i.postimg.cc/jd3Zf9Rb/7.png" alt="Золотистый пушистый кот">
+    </div>
+
+    <div class="background" id="background">
+        <img id="bg_morning" class="background__img" src="https://st2.depositphotos.com/2632165/6694/i/450/depositphotos_66946055-stock-photo-cup-of-coffee.jpg" alt="">
+        <img id="bg_day" class="background__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs84p1WoC9rwBxHpC2d7EsPzI2hdcg7BH4OA&s" alt="">
+        <img id="bg_evening" class="background__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Seychellen-Sonnenuntergang.jpg/800px-Seychellen-Sonnenuntergang.jpg" alt="">
+        <img id="bg_night" class="background__img" src="https://cdn.pixabay.com/photo/2022/03/29/14/46/night-7099526_1280.jpg" alt="">
+    </div>
+
+    <div>
+        <div>
+            <label for="min">Мінімальне значення:</label>
+            <input type="number" id="min" value="1">
+        </div>
+
+        <div>
+            <label for="max">Максимальне значення</label>
+            <input type="number" id="max" value="100">
+        </div>
+
+        <button onclick="generateTable()">Згенерувати таблицю</button>
+    </div>
+
+    <div id="table__container"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
